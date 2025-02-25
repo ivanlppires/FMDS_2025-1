@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        /*
+        // Variáveis, let e const
+        let nome = 'João';
+        const idade = 30;
+        nome += " Maria"; // concatenar
+        */
+
+        const nomes = ["Joao", "Maria", "José"];
+        nomes.push("Pedro");
+        //nomes.push("Ana");  
+        //nomes.pop();
+        //console.log(nomes)
+        //nomes.forEach( nome => console.log(nome + ' [editar][excluir]') );
+        //const filtrados = nomes.filter( (nome) =>  nome.startsWith('J'));
+        //console.log(filtrados);
+        //const mapeados = nomes.map( (nome) =>  nome.replace('ao', 'ão'));
+        //console.log(mapeados);
+        //const numeros = [1, 2, 3, 4, 5];
+        //const soma = numeros.reduce( (acumulador, numero) => acumulador + numero, 2);
+        //console.log(soma);
+
+        // FAÇA UM PROGRAMA PARA RECEBER NOTAS DE 5 ALUNOS E FILTRE PELO NOME
+
+        // como eu guardo para cada posição do vetor o nome e a nota juntos?
+        /*const aluno1 = {
+            nome: 'João',
+            nota: 7
+        };
+        const aluno2 = {
+            nome: 'Maria',
+            nota: 8
+        };
+        const aluno3 = {
+            nome: 'José',
+            nota: 5
+        };
+        const alunos = [aluno1, aluno2, aluno3]; // vetor de objetos
+        */
+        const alunos = [
+            { nome: 'João', nota: 7 },
+            { nome: 'Maria', nota: 8 },
+            { nome: 'José', nota: 5 },
+            { nome: 'Pedro', nota: 6 },
+            { nome: 'Ana', nota: 9 }
+        ];
+
+    //    const filtrados = alunos.filter( aluno => aluno.nome.startsWith('J'));
+    //    filtrados.forEach( aluno => console.log(aluno.nota));
+
+        // Destruir um objeto
+        const aluno = {
+            nome: 'Ivan',
+            nota: 7,
+            email: 'ivanpires@gmail.com',
+            endereco: {
+                rua: 'Rua 1',
+                numero: 123
+            }
+        };
+        //const {nome, nota} = aluno;
+        //console.log(nome)
+
+        // SPREAD OPERATOR ...
+        const numeros = [1, 2, 3, 4, 5];
+
+        const todos = [-1, 0, ...numeros, 6, 7, 8, 9];
+
+        console.log(todos);
+
+</script>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
