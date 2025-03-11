@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diretórios de build e dependências do Vue.js
+dist/
+.cache/
+.vscode/
+.idea/
+
+# Arquivos de ambiente e configurações locais
+.env
+.env.local
+.env.*.local
+
+# Arquivos de log
+logs/
+*.log
+*.log.*
+
+# Cache do Vue.js e Babel
+.DS_Store
+.eslintcache
+/.pnp
+.pnp.js
+
+# Outros
+*.swp
+*.swo
+
