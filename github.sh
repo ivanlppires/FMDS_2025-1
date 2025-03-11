@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Definir mensagem de commit
-COMMIT_MSG="Atualização dos exercícios em sala de aula"
+COMMIT_MSG="Atualização do README"
 
 # Verificar se há argumento para mensagem de commit
 if [ ! -z "$1" ]; then
