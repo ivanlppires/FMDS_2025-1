@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits, watch, watchEffect, onBeforeMount, onMounted } from 'vue';
+import { ref, defineProps, defineEmits, watch, watchEffect } from 'vue';
 const emits = defineEmits(['authenticated']);
 const props = defineProps({ color: String });
 const user = ref('');
@@ -46,9 +46,6 @@ watchEffect(() => {
     console.log('Senha:', pass.value);
     console.log('Usuário:', user.value);
     console.log('Tamanho:', check.value.size);
-});
-onMounted(() => {
-    window.alert('Componente montado');
 });
 </script>
 <style>
