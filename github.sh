@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Definir mensagem de commit
-COMMIT_MSG="exemplo de componentes, props e emits, v-if, v-else e v-for, watch e watchEffect e Hooks"
+COMMIT_MSG="Aula 4: Vuetify + Vue-Router"
 
 # Verificar se há argumento para mensagem de commit
 if [ ! -z "$1" ]; then
