@@ -11,13 +11,13 @@
     </v-app-bar>
 
     <v-main>
-      <!--  -->
+      <v-container><router-view /></v-container>
     </v-main>
   </v-app>
 </template>
 
 <script setup>
-  import { ref } from 'vue'
-  import Menu from '@/components/Menu.vue'
-  const drawer = ref(null)
+import { ref } from 'vue'
+import Menu from '@/components/Menu.vue'
+const drawer = ref(null)
 </script>
