@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Definir mensagem de commit
-COMMIT_MSG="Aula 4: Vuetify + Vue-Router"
+COMMIT_MSG="Aula 5: AUTO-LAYOUT, AUTO-ROUTES E PINIA "
 
 # Verificar se há argumento para mensagem de commit
 if [ ! -z "$1" ]; then

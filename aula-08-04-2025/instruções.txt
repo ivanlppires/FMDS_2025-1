@@ -1,0 +1,27 @@
+PINIA + AUTO ROUTES + AUTO LAYOUT
+
+## INSTALAÇÃO
+1º bun create vuetify
+-> escolha um nome (vai ser o nome da pasta)
+-> escolha o recomendado
+-> não escolha o typescript
+-> escolha o bun
+-> escolha instalar as dependencias
+
+# LEVANTE A APLICAÇÃO
+1º acesse a pasta de estáo a aplicação
+2º execute: bun dev no terminal
+
+## PARA TESTAR O AUTO ROUTES
+1º Crie uma arquivo clients.vue na pasta pages, coloque qualquer coisa.
+2º Acesse na url http://localhost:3000/clients
+3º Isso serve para qualquer novo arquivo.
+
+## PARA TESTAR O AUTO LAYOUT
+1º Todo o layout da app fica na pasta layouts, o principal se chama default.vue
+2º Copia um layout (wireframe) do vuetify, por exemplo: https://github.com/vuetifyjs/vuetify/blob/master/packages/docs/src/examples/wireframes/baseline.vue
+3º Apaga tudo de layouts/default.vue
+4º cola em layouts/default.vue
+4.1 O exemplotem 2 tipos de script, o option api (<script>) e o composition api (<script setup>. Apague todo o blco do option api: deste <script>  ... </script>
+5º coloque <router-view /> onde você deseja mostrar o conteúdo do app
+
