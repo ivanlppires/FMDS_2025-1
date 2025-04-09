@@ -25,3 +25,30 @@ PINIA + AUTO ROUTES + AUTO LAYOUT
 4.1 O exemplotem 2 tipos de script, o option api (<script>) e o composition api (<script setup>. Apague todo o blco do option api: deste <script>  ... </script>
 5º coloque <router-view /> onde você deseja mostrar o conteúdo do app
 
+## PINIA
+
+Temos um app com e itens de menu e um botão login.
+Como faço para os itens do menu aparecerem somente quando eu estiver logado?
+Alem isso, o conteúdo dos arquivos só pode ser exibido se eu estiver logado.
+#comofaz?
+-> USANDO O PINIA
+1º Configurar o estado.
+2º Para visualizar o estado no navegador, utilize a extensão vuedevtools
+3º Crie um arquivo js na pasta stores para o estado desejado. O padrão de nome nome é: useNomedoestadoStore
+4º implemente o state, actions e getters
+5º importe no arquivo que vc deseja verificar o estado
+
+## Autenticação com o Google
+
+1º Fazer um cadastro no firebase
+2º crie um app web
+3º instale o firebase na aplicação usando o bun install firebase
+4º configura o plugin na pasta plugin com suas credenciais geradas pelo firebase
+5º importa e usa o plugin firebase.js criado dentro de index.js (da pasta plugins)
+6º adiciona as chamadas do sdk firebase no user.js do pinia, como signWithPopUp, signOut, getAuth e getProvider
+7º faça o teste em login.vue para buscar nome, foto, etc e testar se os dados estão sendo recebidos do firebase
+
+## finalmente
+
+ESTUDE ISSO PRA CARAMBA!!!!! <-------------
+
