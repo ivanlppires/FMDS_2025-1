@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Definir mensagem de commit
-COMMIT_MSG="Aula 6: EXPRESS "
+COMMIT_MSG="Aula 7: EXPRESS++ "
 
 # Verificar se há argumento para mensagem de commit
 if [ ! -z "$1" ]; then

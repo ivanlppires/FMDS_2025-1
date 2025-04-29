@@ -17,28 +17,47 @@ const createProduct = async (req, res) => {
     }
 }
 
-const getAllProducts = (req, res) => {
-    return res.status(200).json({
-        message: 'Lista de produtos',
+const getAllProducts = async (req, res) => {
+    const { error, data } = await supabase.from('products').select('*');
+    if (!error) return res.status(200).json(data)
+    return res.status(400).json({
+        message: 'Erro ao buscar produtos',
     })
 }
-const getProductById = (req, res) => {
+const getProductById = async (req, res) => {
     const { id } = req.params
-    return res.status(200).json({
-        message: `Produto ${id} encontrado`,
+    const { error, data } = await supabase.from('products').select('*').eq('id', id);
+    if (!error) return res.status(200).json(data)
+    return res.status(400).json({
+        message: 'Erro ao buscar o produto',
     })
 }
-const updateProduct = (req, res) => {
+const updateProduct = async (req, res) => {
     const { id } = req.params
-    return res.status(200).json({
-        message: `Produto ${id} atualizado com sucesso`,
-    })
+    const data = req.body
+    const { error } = await supabase.from('products').update(data).eq('id', id);
+    if (!error) {
+        return res.status(200).json({
+            message: 'Produto atualizado com sucesso',
+        })
+    } else {
+        return res.status(400).json({
+            message: 'Erro ao atualizar produto',
+        })
+    }
 }
-const deleteProduct = (req, res) => {
+const deleteProduct = async (req, res) => {
     const { id } = req.params
-    return res.status(200).json({
-        message: `Produto ${id} deletado com sucesso`,
-    })
+    const { error } = await supabase.from('products').delete().eq('id', id);
+    if (!error) {
+        return res.status(200).json({
+            message: 'Produto deletado com sucesso',
+        })
+    } else {
+        return res.status(400).json({
+            message: 'Erro ao deletar produto',
+        })
+    }
 }
 // Exporta os controllers
 export default {
