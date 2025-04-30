@@ -1,0 +1,6 @@
+# DESAFIO AVALIATIVO OPCIONAL 1 PONTO NA AVA2
+
+## COMPLETE O CRUD PARA:
+- produtos
+- clientes
+

@@ -2,9 +2,17 @@
 import express from 'express'
 import UsersRoute from './routes/UsersRoute.js' // importa as rotas de usuários
 import ProductsRoute from './routes/ProductsRoute.js' // importa as rotas de produtos
+import cors from 'cors'
+
 
 // faz uma instancia do fw e salva em app
 const app = express(); 
+
+// habilitar o cors
+app.use(cors({
+    origin: '*', // permite qualquer origem
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // permite os métodos http
+}))
 
 // Middlewares
 app.use(express.json()) // transforma o body <-> json (parser)
