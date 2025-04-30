@@ -15,7 +15,7 @@ app.use('/products', ProductsRoute) // usa as rotas de produtos
 
 // Rota para tratar qualquer outra rota não definida
 app.use((req, res) => {
-    res.status(404).json({ error: 'Rota não encontrada' })
+    res.status(404).json({ error: 'Recurso não encontrado' })
 })
 
 // configura um listen para trabalhar em uma porta
