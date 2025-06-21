@@ -44,6 +44,35 @@ https://ivanpires.dev/gX/api/
 
 # ✅ Passo 1 — Fazer o build do Frontend
 
+## 🔧 Passo 1.0 — Confira se a rota automática funciona, se não faça:
+
+```javascrip
+// router/index.js (se usar Vue Router)
+import { createWebHistory } from 'vue-router'
+
+const router = createRouter({
+  history: createWebHistory('/gX/'), // 👈 substitua o X pelo número do seu grupo!
+  routes
+})
+```
+
+## 🔧 Passo 1.1 — Configurar Base URL no Vue 3 (Vite)
+
+### 🚨 Ação obrigatória antes do build!
+Edite o arquivo `vite.config.js` na raiz do projeto:
+
+```javascript
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+// 🔥 Substitua 'gX' pelo seu grupo (ex: g1, g2, ..., g10)
+const GROUP_NAME = 'g8' // 👈 Altere aqui!
+
+export default defineConfig({
+  plugins: [vue()],
+  base: `/${GROUP_NAME}/`, // ✅ Caminho correto para subdiretório
+})
+```
 No terminal, dentro da pasta do seu projeto frontend, execute:
 
 ```bash
